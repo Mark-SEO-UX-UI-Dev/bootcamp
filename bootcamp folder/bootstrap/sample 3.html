@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table Example</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <style>
+      table {
+        border: 1px solid #000;
+      }
+
+      th,
+      td {
+        border: 1px solid #000;
+        padding: 8px;
+      }
+
+      .table-header {
+        background-color: orange;
+        color: white;
+      }
+
+      .sub-table-header {
+        background-color: lightorange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr class="table-header">
+            <th>Icons</th>
+            <th>Item Name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="sub-table-header">
+            <td colspan="3">Meals</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Burger</td>
+            <td>₱55.00</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Fried Chicken</td>
+            <td>₱55.00</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Spaghetti</td>
+            <td>₱55.00</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Pizza</td>
+            <td>₱150.00</td>
+          </tr>
+          <tr class="sub-table-header">
+            <td colspan="3">Drinks</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Coke</td>
+            <td>₱20.00</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Sprite</td>
+            <td>₱20.00</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Sarsi</td>
+            <td>₱20.00</td>
+          </tr>
+          <tr class="sub-table-header">
+            <td colspan="2">
+              All items are subject to tax. No refunds. All items are not
+              transferable.
+            </td>
+            <td>Extra rice - ₱20.00</td>
+          </tr>
+          <tr class="sub-table-header">
+            <td colspan="2"></td>
+            <td>Condiments - ₱20.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+body {
+  font-family: "Comic Sans MS";
+  text-align: center;
+  max-width: 11290px;
+  margin: 0px;
+  background-image: url("https://thumbs.dreamstime.com/b/grainy-white-paper-surface-as-texture-background-close-up-macro-200678301.jpg");
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  background-color: rgb(70, 130, 180);
+  color: white;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+nav li {
+  padding: 12px 80px;
+  float: left;
+}
+
+li a:hover {
+  background-color: rgb(0, 0, 139);
+  color: #fff;
+}
+
+ul {
+  width: 100%;
+  margin: 0;
+}
+
+.banner {
+  margin-top: 3px;
+}
+
+h1 {
+  margin-top: 0;
+  font-weight: 20px;
+}
+
+h2 {
+  font-size: 22.5px;
+}
+
+h1,
+h2,
+h4 {
+  margin-bottom: 0;
+}
+
+h4 {
+  margin: auto;
+}
+
+h1,
+h2 {
+  color: rgb(70, 130, 180);
+}
+
+.pastor {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.pastor_right {
+  max-width: 400px;
+  display: inline-block;
+  text-align: left;
+}
+
+.cross1 {
+  max-width: 200px;
+  display: inline-block;
+  margin-right: 200px;
+  padding-right: 0px;
+}
+
+.cross2 {
+  max-width: 200px;
+  display: inline-block;
+  margin-left: 200px;
+}
+
+.list {
+  max-width: 500px;
+  display: inline-block;
+  list-style-position: inside;
+  font-weight: bold;
+  font-size: 150%;
+  font-size: small;
+  justify-content: center;
+}
+
+p {
+  color: black;
+}
+
+.p1 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.p2 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.huell {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+a {
+  font-size: 22.5px;
+  font-weight: bold;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: orange;
+}
+
+a:hover {
+  color: magenta;
+}
+
+a:active {
+  color: lime;
+}
+
+u {
+  font-weight: bold;
+}
+
+#sect1 {
+  padding-bottom: 0;
+}
+
+#sect1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#sect2 {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  margin: 0 auto;
+}
+
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+table {
+  background-color: white;
+}
+
+table,
+th,
+td {
+  border: 1px dotted black;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 1px;
+  text-align: center;
+  font-weight: normal;
+}
+
+th {
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: lightorange;
+}
+
+.huell_list {
+  margin: 0 auto;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: center;
+  width: 30%;
+  font-family: Tahoma;
+  font-weight: bold;
+  display: inline-block;
+  justify-content: center;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+#ugrey {
+  color: rgb(160, 160, 160);
+}
+
+footer {
+  color: rgb(160, 160, 160);
+  font-size: small;
+}
+
+footer a {
+  font-size: 10px;
+}
+
+#pfooter {
+  color: rgb(160, 160, 160);
+}
+
+.fiction {
+  color: rgb(160, 160, 160);
+  font-size: x-small;
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+footer .p1 {
+  font-size: 10px;
+}
+
+footer .p2 {
+  font-size: 10px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists</title>
+    <style>
+      a {
+        text-decoration: none;
+        border-bottom: #ea215a 0.125em solid;
+        color: #ea215a;
+      }
+
+      body {
+        height: 125vh;
+        margin-top: 80px;
+        padding: 30px;
+        background-size: cover;
+        font-family: sans-serif;
+      }
+
+      header {
+        background-color: orange;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 5px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 25px 0 black;
+      }
+
+      header * {
+        display: inline;
+      }
+
+      header li {
+        margin: 20px;
+      }
+
+      header li a {
+        color: blue;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"> Home </a>
+          </li>
+          <li>
+            <a href="#"> About </a>
+          </li>
+          <li>
+            <a href="#"> Contact </a>
+          </li>
+          <li><a href="#"> Terms of use </a></li>
+          <li>
+            <a href="#"> Join Us </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Meats</h1>
+    <ul>
+      <li>Chicken</li>
+      <li>Beef</li>
+      <li>Pork</li>
+      <li>Shrimp</li>
+      <li>Fish</li>
+      <ul>
+        <li>Bangus</li>
+        <li>Tilapia</li>
+        <li>Salmon</li>
+        <li>Sardines</li>
+      </ul>
+    </ul>
+    <h2>How ro cook steak</h2>
+    <ol>
+      <li>Cut a place of meat</li>
+      <li>Add seasoning</li>
+      <li>Cook steak on pan</li>
+    </ol>
+    <h2>Types of Seafood</h2>
+    <dl>
+      <dt>Squid</dt>
+      <dd>Cylindrical, with tentacles</dd>
+      <dt>Oyster</dt>
+      <dd>Has a hard shell</dd>
+      <dt>Lobster</dt>
+      <dd>Live long, red shell</dd>
+    </dl>
+    <p>
+      <a href="https://www.amc.com/privacy">Better Call Saul</a>
+    </p>
+  </body>
+</html>
