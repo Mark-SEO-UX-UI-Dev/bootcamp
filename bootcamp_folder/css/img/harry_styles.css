@@ -1,0 +1,39 @@
+body {
+  background-image: url("wood.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.preview:hover {
+  width: 300px;
+  height: 300px;
+}
+
+#summary {
+  width: 50%;
+}
+
+.highlight {
+  color: rgb(15, 82, 186);
+}
+
+#link-button:hover {
+  background-color: red;
+  padding: 15px;
+}
+
+#dialogue {
+  font-size: larger;
+  text-align: center;
+}
+
+.checklist li {
+  background-image: url("img/check.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 20px; /* adjust this value to position the image */
+  height: 50vh;
+}

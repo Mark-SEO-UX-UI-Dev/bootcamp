@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun with the Alphabet</title>
+    <script>
+      function isVowel(letter) {
+        return "aeiou".includes(letter);
+      }
+      function countVowels() {
+        let word = prompt("Give me a single word that comes into your mind:");
+
+        if (word.trim() == "") {
+          console.error("Blank prompt entered. Please enter a word.");
+          alert("Error: Blank prompt entered. Please enter a word.");
+          return;
+        }
+
+        let vowelCount = 0;
+        let consonantCount = 0;
+
+        for (let i = 0; i < word.length; i++) {
+          let letter = word[i].toLowerCase();
+
+          if (isVowel(letter)) {
+            vowelCount++;
+          } else if (/^[a-z]$/.test(letter) && !isVowel(letter)) {
+            consonantCount++;
+          }
+        }
+
+        console.log("Number of vowels: " + vowelCount);
+        console.log("Number of consonants: " + consonantCount);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Vowel Counter</h1>
+    <button onclick="countVowels()">Enter vowel</button>
+  </body>
+</html>

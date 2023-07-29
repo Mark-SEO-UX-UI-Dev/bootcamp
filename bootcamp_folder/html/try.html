@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      /***********************************************
+       * Limit number of checked checkboxes script
+       ***********************************************/
+
+      function checkboxlimit(checkgroup, limit) {
+        var checkgroup = checkgroup;
+        var limit = limit;
+        for (var i = 0; i < checkgroup.length; i++) {
+          checkgroup[i].onclick = function () {
+            var checkedcount = 0;
+            for (var i = 0; i < checkgroup.length; i++)
+              checkedcount += checkgroup[i].checked ? 1 : 0;
+            if (checkedcount > limit) {
+              alert(
+                "You can only select a maximum of " + limit + " checkboxes"
+              );
+              this.checked = false;
+            }
+          };
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Voting Form</h1>
+    <form onSubmit="{this.solveArea}" id="voting" name="voting">
+      <label>Mayor: </label>
+      <br />
+      <input type="radio" name="mayor" value="dina-pili" />
+      Dina Pili
+      <br />
+      <input type="radio" name="mayor" value="lucky-chan" />
+      Lucky Chan
+      <br />
+      <input type="radio" name="mayor" value="pama-hi-in" />
+      Pama Hi-in
+      <br />
+      <label>Vice-president: </label>
+      <br />
+      <input type="radio" name="vice-president" value="pat-tumbakita" />
+      Pat Tumbakita
+      <br />
+      <input type="radio" name="vice-president" value="ben-eko" />
+      Ben Eko
+      <br />
+      <input type="radio" name="vice-president" value="crystal-maiden" />
+      Crystal Maiden
+      <br />
+      <label>Representative: </label>
+      <p>Select your favorite three representatives below:</p>
+      <br />
+      <input type="checkbox" value="1" name="representative" class="check" />
+      Juan Tutri
+      <br />
+      <input type="checkbox" value="2" name="representative" class="check" />
+      Tom Mabakana
+      <br />
+      <input type="checkbox" value="3" name="representative" class="check" />
+      Cory Corykok
+      <br />
+      <input type="checkbox" value="4" name="representative" class="check" />
+      Anne Nonanaman
+      <br />
+      <input type="checkbox" value="5" name="representative" class="check" />
+      Pete Chapay
+      <br />
+      <input type="submit" class="btn btn-primary" />
+      <br />
+    </form>
+    <div>
+      <h2>Vote Record</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name {this.state.mayor}</th>
+            <th>Position {this.state.vice}</th>
+            <th>Total Votes {this.state.rep}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script type="text/javascript">
+      //Syntax: checkboxlimit(checkbox_reference, limit)
+      checkboxlimit(document.forms.voting.representative, 3);
+    </script>
+  </body>
+</html>

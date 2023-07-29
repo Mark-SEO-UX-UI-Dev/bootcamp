@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express-joi-validation": "^5.0.1",
+    "joi": "^17.9.2",
+    "nodemon": "^2.0.22",
+    "upper-case": "^2.0.2"
+  }
+}

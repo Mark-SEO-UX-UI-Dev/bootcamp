@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing Functions</title>
+    <script>
+      let count = 0;
+
+      function welcome() {
+        alert("Hi! Weather warning.");
+      }
+
+      function goodbye() {
+        alert("bye bye");
+      }
+
+      function addCount() {
+        count++;
+        console.log(count);
+      }
+
+      function subCount() {
+        count--;
+        console.log(count);
+      }
+
+      function convertToUSD(php) {
+        let usd_value = php * 0.018;
+        console.log(usd_value);
+      }
+
+      function getAreaTriangle(base, height) {
+        let area = base * height * 0.5;
+        console.log(area);
+      }
+      getAreaTriangle(5, 6);
+      //   welcome();
+    </script>
+    <script>
+      function convertToUSD(php) {
+        alert("NOT WORKING!");
+      }
+      count = 10000;
+    </script>
+  </head>
+  <body>
+    <button onclick="welcome()">Welcome</button>
+    <button onclick="goodbye()">Goodbye</button>
+    <button onclick="addCount()">+</button>
+    <button onclick="subCount()">-</button>
+    <button onclick="convertToUSD(530)">Convert to USD</button>
+    <button onclick="getAreaTriangle()">Area of Triangle</button>
+  </body>
+</html>
